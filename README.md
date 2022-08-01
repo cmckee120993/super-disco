@@ -1,1 +1,1 @@
-# super-disco
+# work-day-scheduler
