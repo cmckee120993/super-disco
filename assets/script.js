@@ -36,15 +36,18 @@ saveBtn.click(function(event) {
     console.log('clicked');
     let eventText = $(this).siblings('input').val();
     let eventHour = $(this).parent().attr('id');
-    let eventList = [];
-    let eventObject = new Object();
+    
+    localStorage.setItem(eventHour, eventText);
 
-    eventObject.event = eventText;
-    eventObject.time = eventHour;
-    eventList.push(eventObject);
-    localStorage.setItem('userEvents', JSON.stringify(eventList));
-
-    console.log(eventList);
+    $('#9 .message').text(localStorage.getItem('9'));
+    $('#10 .message').text(localStorage.getItem('10'));
+    $('#11 .message').text(localStorage.getItem('11'));
+    $('#12 .message').text(localStorage.getItem('12'));
+    $('#13 .message').text(localStorage.getItem('13'));
+    $('#14 .message').text(localStorage.getItem('14'));
+    $('#15 .message').text(localStorage.getItem('15'));
+    $('#16 .message').text(localStorage.getItem('16'));
+    $('#17 .message').text(localStorage.getItem('17'));
 });
 
 
