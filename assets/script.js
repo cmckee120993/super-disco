@@ -27,9 +27,63 @@ Array.from(rows).forEach( function(row) {
 });
 
 // Save button and adding tasks
-$("button").on('click', function() {
-    console.log('hello');
+let userEvent = $('input').val;
+let eventDiv = $('#event');
+let saveBtn = $(".saveBtn");
+// let eventHour = rows.getAttribute('id');
+
+
+saveBtn.click(function(event) {
+    console.log('clicked');
+    
+
 })
+
+
+// saveBtn.forEach(function(button){
+//     saveBtn.click(function(event) {
+//         console.log(clicked);
+//     })
+// })
+
+// $("button").click(function(event) {
+//     console.log('clicked');
+//     let eventList = JSON.parse(localStorage.getItem('userEvents'));
+//     if (eventList === null) {
+//         let eventList = [];
+//     let newEvent = new Object();
+
+//     newEvent.event = $('input').val();
+//     newEvent.hour = eventHour;
+
+//     eventList.push(newEvent);
+//     localStorage.setItem('userEvents', JSON.stringify(eventList));
+//     console.log(eventList);
+//     } else {
+//         var otherEvent = new Object();
+//         otherEvent.event = $('input').val();
+//         otherEvent.hour = eventHour;
+//         console.log(otherEvent);
+//         eventList.push(otherEvent);
+//         localStorage.setItem('userEvent', JSON.stringify(otherEvent));
+//         console.log(eventList);
+//     }
+
+    // let eventInput = $(this).siblings(userEvent).text();
+    // let rowsInput = $(this).closest('.row');
+    
+
+// localStorage.setItem('row', eventHour);
+// localStorage.setItem('event', JSON.stringify(eventInput));
+
+//    if(userEvent === "") {
+//     console.log('empty');
+// //     let popUpMessage = document.createElement('p');
+// //     popUpMessage.textContent = 'Please type an event before hitting save.';
+// //     eventDiv.append(popUpMessage);
+
+//    }
+// );
 
 
 
