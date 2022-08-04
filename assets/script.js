@@ -9,7 +9,7 @@ setInterval(time, 1000);
 
 // Current hour variable
 let currentHour = moment().format('H');
-console.log(currentHour);
+
 
 let rows = $('.row');
 
@@ -18,11 +18,18 @@ Array.from(rows).forEach( function(row) {
     let rowIdString = parseInt(row.id);
     
     if (currentHour > rowIdString) {
-        row.classList.add('past');
+        $(row).addClass('past');
     } else if (currentHour === rowIdString) {
-        row.classList.add('present');
+        $(row).addClass('present');
     } else if (currentHour < rowIdString) {
-        row.classList.add('future')
+        $(row).addClass('future')
     }
+});
+
+// Save button and adding tasks
+$("button").on('click', function() {
+    console.log('hello');
 })
+
+
 
