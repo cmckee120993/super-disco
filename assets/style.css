@@ -1,19 +1,25 @@
-* {
-  outline: dashed red;
-}
+
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 1;
 }
 
-textarea{
+input {
   background: transparent;
   border: none;
   resize: none;
   color: #000000;
   border-left: 1px solid black;
   padding: 10px;
+}
+
+.time {
+  border-bottom: dashed 3px gray;
+  border-right: solid black;
+  background: white;
+  color: black;
+  text-align: right;
 }
 
 .jumbotron {
@@ -46,17 +52,17 @@ textarea{
 }
 
 .past {
-  background-color: #d3d3d3;
+  background-color: #a61206;
   color: white;
 }
 
 .present {
-  background-color: #ff6961;
-  color: white;
+  background-color: white;
+  color: black;
 }
 
 .future {
-  background-color: #77dd77;
+  background-color: #50c878;
   color: white;
 }
 

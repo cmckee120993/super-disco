@@ -24,6 +24,8 @@ Array.from(rows).forEach( function(row) {
     } else if (currentHour < rowIdString) {
         $(row).addClass('future')
     }
+
+    setInterval(this, 1000*60*60 );
 });
 
 // Save button and adding tasks
