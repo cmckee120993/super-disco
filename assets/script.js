@@ -40,6 +40,7 @@ saveBtn.click(function(event) {
     let eventHour = $(this).parent().attr('id');
     
     localStorage.setItem(eventHour, eventText);
+    $(this).siblings('input').val('');
 
     $('#9 .message').text(localStorage.getItem('9'));
     $('#10 .message').text(localStorage.getItem('10'));
